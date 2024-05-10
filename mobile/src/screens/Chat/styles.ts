@@ -42,6 +42,10 @@ const SectionsSendMessageStyle = StyleSheet.create({
     backgroundColor: colors.primary,
     padding: 10,
     borderRadius: 50,
+  },
+
+  buttonCamera: {
+    paddingRight: 10
   }
 });
 

@@ -5,6 +5,8 @@ import { StyleSheet } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import Profile from '../screens/Profile';
 import Chat from '../screens/Chat';
+import Notifications from '../screens/Notifications';
+import Test from '../screens/Test';
 
 export default function TabBottom() {
   const TabBottom = createBottomTabNavigator();
@@ -38,6 +40,21 @@ export default function TabBottom() {
         options={{
           tabBarStyle: { display: 'none' }
         }}
+      />
+
+      <TabBottom.Screen
+        name="Notifications"
+        component={ Notifications }
+        options={{
+          tabBarIcon: () => <Ionicons name='notifications-outline' size={25} />,
+          tabBarStyle: { display: 'none' }
+        }}
+      />
+
+
+      <TabBottom.Screen
+        name="Test"
+        component={ Test }
       />
     </TabBottom.Navigator>
   )

@@ -33,7 +33,9 @@ export default function Home({ navigation }) {
           </Text>
         </TouchableOpacity>
 
-        <TouchableOpacity>
+        <TouchableOpacity
+          onPress={ () => navigation.navigate('Notifications')}
+        >
           <Ionicons
             name="notifications-outline" 
             size={30}

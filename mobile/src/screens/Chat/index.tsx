@@ -75,6 +75,15 @@ export default function Chat({ navigation }) {
           style={ SectionsSendMessageStyle.textInput }
         />
 
+        {/* <TouchableOpacity
+          style={ SectionsSendMessageStyle.buttonCamera }
+        >
+          <MaterialCommunityIcons
+            name="camera"
+            size={20}
+          />
+        </TouchableOpacity> */}
+
         <TouchableOpacity
           style={ SectionsSendMessageStyle.buttonSend }
         >

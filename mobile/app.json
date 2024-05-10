@@ -23,13 +23,13 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.anonymous.mobile"
+      "package": "com.anonymous.mobile",
+      "permissions": ["SCHEDULE_EXACT_ALARM"]
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "@notifee/react-native",
       [
         "expo-build-properties",
         {
@@ -39,7 +39,15 @@
             "buildToolsVersion": "31.0.0"
           }
         }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./local/assets/notification-icon.png",
+          "color": "#ffffff"
+        }
       ]
-    ]
+    ],
+    "permissions": ["NOTIFICATIONS"]
   }
 }
