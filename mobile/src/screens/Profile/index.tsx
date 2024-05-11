@@ -9,12 +9,11 @@ import OptionItem from "../../components/OptionItem";
 import { ConteinerButtonsOptionsStyle, OptionsUserLogStyle } from "../../components/OptionItem/styles";
 import HeaderScreen from "../../components/HeaderScreen";
 
-export default function Profile({ navigation }) {
+export default function Profile() {
   return (
     <ScrollView>
       <HeaderScreen
         title="Perfil"
-        navigation={ navigation }
       />
 
       <View style={ SectionStyles.container }>

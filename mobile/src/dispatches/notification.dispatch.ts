@@ -18,4 +18,3 @@ export const dispatchNotification = async ({ body, title, type = 'notify', trigg
     console.error('Failed to dispatch notification:', error);
   }
 };
-

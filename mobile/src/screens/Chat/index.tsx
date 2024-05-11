@@ -47,12 +47,11 @@ const messageData = [
 
 const userId = 1;
 
-export default function Chat({ navigation }) {
+export default function Chat() {
   return (
     <View style={ ContainerStyle.container }>
       <HeaderScreen
         title="Chat"
-        navigation={ navigation }
       />
 
 

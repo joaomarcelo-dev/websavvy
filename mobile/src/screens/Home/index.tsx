@@ -54,6 +54,7 @@ export default function Home({ navigation }) {
             <View style={ SpeedAccessStyle.containerButtons }>
               <TouchableOpacity
                 style={ SpeedAccessStyle.button }
+                onPress={ () => navigation.navigate('Materials')}
               >
                 <Octicons
                   name="book"
@@ -65,6 +66,7 @@ export default function Home({ navigation }) {
 
               <TouchableOpacity
                 style={ SpeedAccessStyle.button }
+                onPress={ () => navigation.navigate('Revenues')}
               >
                 <MaterialIcons
                   name="my-library-books"
@@ -90,6 +92,7 @@ export default function Home({ navigation }) {
 
               <TouchableOpacity
                 style={ SpeedAccessStyle.button }
+                onPress={ () => navigation.navigate('Prescription')}
               >
                 <FontAwesome5
                   name="hand-holding-medical"
@@ -100,7 +103,10 @@ export default function Home({ navigation }) {
               </TouchableOpacity>
             </View>
 
-            <TouchableOpacity style={ SpeedAccessStyle.buttonArgendConsult }>
+            <TouchableOpacity
+              style={ SpeedAccessStyle.buttonArgendConsult }
+              onPress={ () => navigation.navigate('NewAppointment')}
+            >
               <Ionicons
                 name="calendar-clear"
                 size={25}

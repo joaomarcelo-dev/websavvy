@@ -3,7 +3,7 @@ import HeaderScreen from "../../components/HeaderScreen";
 import Notification from "../../components/Notification";
 import { NotificationType } from "../../Types/Notification.type";
 
-export default function Notifications({ navigation }) {
+export default function Notifications() {
   const notifications: NotificationType[] = [
     {
       id: 'dfsdfs',
@@ -20,7 +20,6 @@ export default function Notifications({ navigation }) {
   <View>
     <HeaderScreen
       title="Notificações"
-      navigation={ navigation }
     />
 
     <ScrollView>

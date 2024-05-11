@@ -3,16 +3,12 @@ import * as Notification from 'expo-notifications';
 const requestNotificationPermission = async () => {
   try {
     const { status } = await Notification.getPermissionsAsync();
-    console.log('>>>>>>>>>>>>>>>>> Atorização de notificações: ', status);
-    
+
     await Notification.requestPermissionsAsync();
 
     if (status !== 'granted') {
       const { status: newStatus } = await Notification.requestPermissionsAsync();
-      
-      console.log('>>>>>>>>>>>>>>> Pedindo permisão para acessar as notificações');
-      
-
+    
       if (newStatus !== 'granted') {
         throw new Error('Permission denied');
       }

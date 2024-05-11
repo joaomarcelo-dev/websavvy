@@ -7,6 +7,10 @@ import Profile from '../screens/Profile';
 import Chat from '../screens/Chat';
 import Notifications from '../screens/Notifications';
 import Test from '../screens/Test';
+import Prescription from '../screens/Prescription';
+import Revenues from '../screens/Revenues';
+import Materials from '../screens/Materials';
+import NewAppointment from '../screens/NewAppointment';
 
 export default function TabBottom() {
   const TabBottom = createBottomTabNavigator();
@@ -21,7 +25,7 @@ export default function TabBottom() {
         name="Home"
         component={ Home }
         options={{
-          tabBarIcon: () => <Ionicons name='home-outline' size={25} /> 
+          tabBarIcon: () => <Ionicons name='home-outline' size={25} />
         }}
       />
 
@@ -29,8 +33,7 @@ export default function TabBottom() {
         name="Profile"
         component={ Profile }
         options={{
-          tabBarIcon: () => <Ionicons name='person-outline' size={25} />,
-          tabBarStyle: { display: 'none' }
+          tabBarButton: () => null,
         }}
       />
 
@@ -38,7 +41,7 @@ export default function TabBottom() {
         name="Chat"
         component={ Chat }
         options={{
-          tabBarStyle: { display: 'none' }
+          tabBarButton: () => null,
         }}
       />
 
@@ -46,8 +49,7 @@ export default function TabBottom() {
         name="Notifications"
         component={ Notifications }
         options={{
-          tabBarIcon: () => <Ionicons name='notifications-outline' size={25} />,
-          tabBarStyle: { display: 'none' }
+          tabBarButton: () => null,
         }}
       />
 
@@ -55,6 +57,42 @@ export default function TabBottom() {
       <TabBottom.Screen
         name="Test"
         component={ Test }
+        options={{
+          
+        }}
+      />
+
+      <TabBottom.Screen
+        name="Prescription"
+        component={ Prescription }
+        options={{
+          tabBarButton: () => null,
+        }}
+      />
+
+
+      <TabBottom.Screen
+        name="Revenues"
+        component={ Revenues }
+        options={{
+          tabBarButton: () => null,
+        }}
+      />
+
+      <TabBottom.Screen
+        name="Materials"
+        component={ Materials }
+        options={{
+          tabBarButton: () => null,
+        }}
+      />
+
+      <TabBottom.Screen
+        name="NewAppointment"
+        component={ NewAppointment }
+        options={{
+          tabBarButton: () => null,
+        }}
       />
     </TabBottom.Navigator>
   )
